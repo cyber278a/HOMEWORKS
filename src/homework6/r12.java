@@ -2,7 +2,7 @@ package homework6;
 
 import java.util.Scanner;
 
-public class r1 {
+public class r12 {
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
         System.out.println("Please enter your month of birth (Month)");
