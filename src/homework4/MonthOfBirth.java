@@ -3,8 +3,8 @@ package homework4;
 import java.util.Scanner;
 
 public class MonthOfBirth {
-    public static void main(String[] args) {
-        Scanner scanner=new Scanner(System.in);
+     public static void main(String[] args) {
+       Scanner scanner=new Scanner(System.in);
         System.out.println("Please enter your month of birth (Month)");
         String month=scanner.nextLine();
          switch (month){
@@ -27,11 +27,9 @@ public class MonthOfBirth {
              case "October" :
              case "November":
                  System.out.println("You were born in a fall");
-                break;
+                 break;
              default:
-                 System.out.println("Something went wrong. Try again");}
-        scanner.close();
+                 System.out.println("Try again");}
 
 
-    }
-}
+}}
