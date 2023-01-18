@@ -12,8 +12,8 @@ public class StartEndPoint {
         int sum2=0;
         for (int i = start; i <=end ; i++) {
 
-           if (i%2==0){sum1++;}
-               else{sum2++;}}
+           if (i%2==0){sum1=sum1+i;}
+               else{sum2=sum2+i;}}
             System.out.println("Sum of even numbers " +sum1);
         System.out.println("Sum of odd numbers "+sum2);
 
