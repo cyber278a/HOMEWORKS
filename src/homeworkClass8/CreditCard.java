@@ -2,7 +2,7 @@ package homeworkClass8;
 
 import java.util.Scanner;
 
-public class CreditCard {
+public class CreditCard {//************
     public static void main(String[] args) {
 
 
