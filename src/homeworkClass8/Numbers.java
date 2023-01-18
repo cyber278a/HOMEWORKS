@@ -1,4 +1,4 @@
-package homework7;
+package homeworkClass8;
 
 public class Numbers {
     public static void main(String[] args) {
