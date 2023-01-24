@@ -19,6 +19,7 @@ public class D2Arrays {
         System.out.println(thomsonTrain[1][1]);
         System.out.println(Arrays.toString(thomsonTrain[0]));
 
+
     }
 }
 

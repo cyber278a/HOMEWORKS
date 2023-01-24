@@ -2,15 +2,17 @@ package class9;
 
 public class ArraysDemo {
     public static void main(String[] args) {
-        String name="Slava";
-        String name2="Safi";
-        String name3="Jason";
-        String name4="Nabi";
-        String name5="Anees";
+        String [] names2=new String [5];
+        names2[0]="Sergey";
+        names2[1]="Alex";
+        names2[2]="Emil";
+        names2[3]="Ross";
+        names2[4]="Steve";
+
 
         String [] names={"Slava","Safi","Jason","Nabi","Anees","Joseph"};
 
-        System.out.println(name2);
+        ;
         System.out.println(names[4]);
         System.out.println(names[3]);
         System.out.println(names[5]);
