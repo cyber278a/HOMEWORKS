@@ -9,7 +9,7 @@ public class DogTester {
         // This is how we create the objects of a class
         Dog jacky= new Dog();
         jacky.sleep();
-
+        System.out.println();
 
     }
 }

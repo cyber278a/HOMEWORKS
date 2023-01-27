@@ -4,7 +4,8 @@ public class CatTester {public static void main(String[] args) {
     // creating an object from the Cat class
     Cat cat1= new Cat();
     cat1.name="lego";
-    cat1.breed="Van Cat";
+
+    cat1.name="lego";
     cat1.age=2;
     cat1.color="Grey";
     cat1.attitude=false;
@@ -15,9 +16,14 @@ public class CatTester {public static void main(String[] args) {
     cat2.breed="Domestic";
     cat2.color="White";
 
-    System.out.println(cat2.breed);
-    cat2.speak();
+    System.out.println(cat1.breed);
+    System.out.print(" Husky ");
+
+   cat1.speak();
 
 
+
+
+    }
 }
-}
+

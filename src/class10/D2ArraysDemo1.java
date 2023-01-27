@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class D2ArraysDemo1 {
     public static void main(String[] args) {
 
-        int[][] matrix={ {10,20,30},
+        double[][] matrix={ {10,20,30},
                 {55,22,45,50},
                 {100,220,450},
         };
