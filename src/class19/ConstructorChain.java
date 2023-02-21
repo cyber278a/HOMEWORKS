@@ -11,8 +11,10 @@ public class ConstructorChain {ConstructorChain(){
     }
 
     ConstructorChain(String str, int number){
+
         this(str);
         System.out.println("This is construtor with int parameter"+number);
+
     }
 
     public static void main(String[] args) {

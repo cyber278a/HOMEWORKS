@@ -14,6 +14,7 @@ Limitations of Foreach Loop
                     if(x%2!=0){
                         x=0;/// just an example!!!!!!!!!!!!!!!!!!
                     }
+                    System.out.println(x);
                 }
 
 

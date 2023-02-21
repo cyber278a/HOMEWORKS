@@ -12,8 +12,7 @@ public class r32IfDoAgain {
         //  If age is above 25, then check if a user entered F then the output should be "Woman" otherwise it should say "Man"
 
         //   If age is below 25, then check if a user entered F then the output should be "Girl" otherwise it should say "Boy"
-
-//!!!!!!!!!!!!!!!!!!!!!! NEED TO MOVE AGE OUT!!!!!!!!!!!!!!!!
+        //   ! NEED TO MOVE AGE OUT
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter your gender: M or F");
         String gender = scanner.next();
