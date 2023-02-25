@@ -20,16 +20,18 @@ class A extends Marks{
     double marksSubject1;
     double marksSubject2;
     double marksSubject3;
+    
 
     public A(double marksSubject1, double marksSubject2, double marksSubject3) {
         this.marksSubject1 = marksSubject1;
         this.marksSubject2 = marksSubject2;
         this.marksSubject3 = marksSubject3;
+
     }
 
     @Override
-    double getPercentage() {
-        return (marksSubject1+marksSubject2+marksSubject3)/3;
+    double  getPercentage() {return (marksSubject1+marksSubject2+marksSubject3)/3;
+
     }
 }
 class B extends Marks{
@@ -52,7 +54,7 @@ class B extends Marks{
 }
 class Test2{
     public static void main(String[] args) {
-        A a=new A(88,99,86);
+        A a=new A(87,98,80);
         System.out.println(a.getPercentage());
         B b=new B(89,90,87,94);
         System.out.println(b.getPercentage());
