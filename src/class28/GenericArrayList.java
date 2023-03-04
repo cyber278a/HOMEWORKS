@@ -17,7 +17,7 @@ public class GenericArrayList {
         names.add("10");
 
 
-// !!! GENERIC -THATS CODE NOBODY USE ANYMORE,ONLY DIMOND <> OPERATORS!!
+// !!!  -THATS  the CODE NOBODY USE ANYMORE,ONLY DIMOND <> OPERATORS!!
 
 
 

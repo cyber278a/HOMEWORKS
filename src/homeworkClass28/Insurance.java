@@ -12,56 +12,88 @@ import java.util.ArrayList;
 abstract public class Insurance {
     String insuranceName;
 
-     abstract void getQuote();
+    public Insurance(String insuranceName) {
+        this.insuranceName = insuranceName;
+    }
+
+    abstract void getQuote();
      abstract void cancelInsurance();
 }
 class Car extends Insurance{
     String CarModel;
 
+    public Car(String insuranceName, String carModel) {
+        super(insuranceName);
+        CarModel = carModel;
+    }
+
     @Override
     void cancelInsurance() {
+        System.out.println("Can cancel  anytime");
 
     }
 
     @Override
     void getQuote() {
+        System.out.println(insuranceName+" quote is 2000$ a year");
 
     }
 }
-class Cat extends Insurance{
+class Pet extends Insurance{
     String petType;
+
+    public Pet(String insuranceName, String petType) {
+        super(insuranceName);
+        this.petType = petType;
+    }
 
     @Override
     void getQuote() {
+        System.out.println(petType+"'s insurance 580$ a year");
 
     }
 
     @Override
-    void cancelInsurance() {
+    void cancelInsurance() {System.out.println("You can cancel your "+insuranceName+" anytime");
 
     }
 }
 class Health extends Insurance{
+
+    public Health(String insuranceName) {
+        super(insuranceName);
+    }
+
     @Override
-    void getQuote() {
+    void getQuote() {System.out.println("Your health insurance is 3400$ per year");
 
     }
 
     @Override
-    void cancelInsurance() {
+    void cancelInsurance() {System.out.println("You can cancel your " + insuranceName + " anytime with %7 fee");
 
     }
 }
-class Test{
+class Test {
+
     public static void main(String[] args) {
+        ArrayList<Insurance> insurances=new ArrayList<>();
+        insurances.add(new Car("Geico","BMW"));
+        insurances.add(new Pet("Pet love","Cat"));
+        insurances.add(new Health("Allianz"));
 
+        for (Insurance i:insurances){
+            i.getQuote();
+            i.cancelInsurance();
+        }
+        System.out.println("********************");
 
-    Car car=new Car();
-    Cat cat=new Cat();
+   /* Car car=new Car();
+    Pet pet=new Pet();
     Health health=new Health();
     ArrayList<Insurance> allObjects = new ArrayList<>();
     allObjects.add(car);
-    allObjects.add(cat);
+    allObjects.add(pet);
     allObjects.add(health);
 
 
@@ -80,4 +112,7 @@ for (Insurance ins:allObjects){
         allObjects.forEach(s->s.getQuote());
         allObjects.forEach(s-> s.cancelInsurance());
 
+}}
+
+    */
 }}
